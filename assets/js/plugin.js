@@ -51,11 +51,6 @@ $(function() {
     * Plugin initialization
     ------------------------*/
   
-    // Materialize Slider
-    $('.slider').slider({
-      full_width: true
-    });
-  
     // Materialize Dropdown
     $('.dropdown-button').dropdown({
       inDuration: 300,
@@ -108,24 +103,7 @@ $(function() {
       });
   
     
-    //Main Left Sidebar Chat
-    $('.chat-collapse').sideNav({
-      menuWidth: 300,
-      edge: 'right',
-    });
-    $('.chat-close-collapse').click(function() {
-      $('.chat-collapse').sideNav('hide');
-    });
-    $('.chat-collapsible').collapsible({
-      accordion: false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
-    });
-  
-    // Pikadate datepicker
-    $('.datepicker').pickadate({
-      selectMonths: true, // Creates a dropdown to control month
-      selectYears: 15 // Creates a dropdown of 15 years to control year
-    });
-  
+
     // Perfect Scrollbar
     $('select').not('.disabled').material_select();
       var leftnav = $(".page-topbar").height();  
@@ -170,24 +148,6 @@ $(function() {
       toggleFullScreen();
     });
   
-  
-    // Floating-Fixed table of contents (Materialize pushpin)
-    if ($('nav').length) {
-      $('.toc-wrapper').pushpin({
-        top: $('nav').height()
-      });
-    }
-    else if ($('#index-banner').length) {
-      $('.toc-wrapper').pushpin({
-        top: $('#index-banner').height()
-      });
-    }
-    else {
-      $('.toc-wrapper').pushpin({
-        top: 0
-      });
-    }
-  
     // Toggle Flow Text
     var toggleFlowTextButton = $('#flow-toggle')
     toggleFlowTextButton.click(function() {
@@ -227,24 +187,5 @@ $(function() {
         overflow: 'auto'
       })
     }
-  
-    //LINE CHART WITH AREA IN SIDEBAR
-      new Chartist.Line('#ct2-chart', {
-          labels: [1, 2, 3, 4, 5, 6, 7, 8],
-          series: [
-              [5, 9, 7, 8, 5, 3, 5, 4]
-          ]
-      }, {
-          low: 0,
-          showArea: true
-      });
-      
-    //Trending chart for small screen
-    if(window_width <= 480){    
-      $("#trending-line-chart").attr({
-        height: '200'
-      });
-    }
-  
   
   }); // end of document ready
