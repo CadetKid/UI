@@ -1,115 +1,63 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="msapplication-tap-highlight" content="no">
-    <title>Project CPA</title>
-    <!-- Favicons-->
-    <link rel="icon" href="assets/img/cpalogo.png" sizes="32x32">
-    <!-- Favicons-->
-    <link rel="apple-touch-icon-precomposed" href="assets/img/cpalogo.png">
-
-    <!-- CORE CSS-->
-    <link href="assets/css/materializecss.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <link href="assets/css/perfectscrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProjectCPA</title>
+    <link rel="icon" href="assets/img/cpalogo.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/app.css">
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+        integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="stylesheet" href="assets/css/materializecss.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <!-- Start Page Loading -->
-    <!-- <div id="loader-wrapper">
+    <div id="loader-wrapper">
         <div id="loader"></div>        
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
-    </div> -->
-    <!-- End Page Loading -->
-
-    <!-- START HEADER -->
-    <header id="header" class="page-topbar">
-        <!-- start header nav-->
-        <div class="navbar-fixed">
-            <nav class="indigo">
-                <div class="nav-wrapper">
-                    <a class="brand-logo" id="cpa-logo">ProjectCPA</a>
-                    <ul class="left">
-                        <li class="no-hover"><a href="#" data-activates="slide-out"
-                                class="menu-sidebar-collapse btn-floating btn-flat btn-medium waves-effect waves-light hide-on-large-only"><i
-                                    class="material-icons">menu</i></a></li>
-                        <li>
-                            <h1 class="logo-wrapper"><a href="index.html" class="brand-logo darken-1"></a> <span
-                                    class="logo-text">Project CPA</span></h1>
-                        </li>
-                    </ul>
-                    <ul class="right hide-on-med-and-down">
-                        <li class="active"><a href="">Student list</a></li>
-                        <li><a href="">Enrollment</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <!-- end header nav-->
-    </header>
-    <!-- END HEADER -->
-
-    <!-- START MAIN -->
-    <div id="main">
-        <!-- START WRAPPER -->
-        <div class="wrapper">
-
-            <!-- START LEFT SIDEBAR NAV-->
-            <aside id="left-sidebar-nav hide-on-large-only">
-                <ul id="slide-out" class="side-nav leftside-navigation ">
-                    <li class="bold active"><a href="index.html" class="waves-effect waves-cyan"><i
-                                class="mdi-action-dashboard"></i>Student List</a>
-                    </li>
-                    <li class="bold"><a href="app-email.html" class="waves-effect waves-cyan"><i
-                                class="mdi-communication-email"></i> Enrollment</a>
+    </div>
+    <header>
+        <nav class="nav-extended nav-fixed materialize-indigo">
+            <div class="nav-wrapper">
+                <a class="brand-logo" id="cpa-logo">ProjectCPA</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li>
+                        
                     </li>
                 </ul>
-                <a href="#" data-activates="slide-out"
-                    class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only cyan"><i
-                        class="mdi-navigation-menu"></i></a>
-            </aside>
+            </div>
+        </nav>
+        <ul class="sidenav" id="mobile-nav">
+            <li>
+                <a target="_blank" class="title" href="https://github.com/ProjectCPA/UI">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </li>
+        </ul>
+    </header>
 
-            <section id="content">
-                <div class="container">
+        <div class="row">
+            <div class="col-s12 l12">
+                <div class="center-align">
+                    <h3>hljfk</h3>
                 </div>
-            </section>
 
+            </div>
         </div>
 
-    </div>
-    <!-- END MAIN -->
 
-
-    <!-- ================================================
-    Scripts
-    ================================================ -->
-
-    <!-- jQuery Library -->
-    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
-    <!--materialize js-->
-    <script type="text/javascript" src="assets/js/materialize.js"></script>
-    <!--scrollbar-->
-    <script type="text/javascript" src="assets/js/perfectscrollbar.js"></script>
-    <!--plugins.js - Some Specific JS codes for Plugin Settings-->
-    <script type="text/javascript" src="assets/js/plugin.js"></script>
-    <!-- Toast Notification -->
-    <script type="text/javascript">
-        // Toast Notification
-        $(window).load(function () {
-            setTimeout(function () {
-                Materialize.toast('<span>Hiya! I am a toast.</span>', 1500);
-            }, 1500);
-        });
-
-    </script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/materialize.js"></script>
+    <script src="assets/js/plugin.js"></script>
 </body>
 
 </html>

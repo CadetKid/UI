@@ -5,7 +5,11 @@
   Author URL: http://www.themeforest.net/user/geekslabs
 ================================================================================*/
 
-$(function() {
+
+$(document).ready(function() {
+  $('.tooltipped').tooltip();
+  $('.sidenav').sidenav();
+  $('select').formSelect();
 
     "use strict";
   
@@ -102,20 +106,6 @@ $(function() {
         belowOrigin: true // Displays dropdown below the button
       });
   
-    
-
-    // Perfect Scrollbar
-    $('select').not('.disabled').material_select();
-      var leftnav = $(".page-topbar").height();  
-      var leftnavHeight = window.innerHeight - leftnav;
-    $('.leftside-navigation').height(leftnavHeight).perfectScrollbar({
-      suppressScrollX: true
-    });
-      var righttnav = $("#chat-out").height();
-    $('.rightside-navigation').height(righttnav).perfectScrollbar({
-      suppressScrollX: true
-    });  
-    
     
     // Fullscreen
     function toggleFullScreen() {
