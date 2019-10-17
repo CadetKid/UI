@@ -1,9 +1,18 @@
 #cpa-logo{
-  font-family: 'Courgette', cursive;;
-  font-size: 30px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 25px;
   margin-top: -1px;
   margin-left: 15px;
   color: #ffffff;
+}
+#presentation-page-text{
+  line-height: 45px;
+}
+#presentation-svg{
+  margin-top: 20px;
+}
+#brand-logo{
+  font-family: 'Poiret One', cursive;
 }
 body {
     background-color: #fcfcfc;
