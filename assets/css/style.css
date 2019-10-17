@@ -452,9 +452,6 @@ body {
   ul.side-nav.leftside-navigation ul.collapsible-accordion {
     background-color: #FFF;
   }
-  ul.side-nav.leftside-navigation:hover {
-    /*overflow-y:hidden;*/
-  }
   ul.side-nav.leftside-navigation li.user-details {    
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1264,7 +1261,6 @@ body {
     font-size: 1.28rem;  
     line-height: 1.6em;
     color: #009315;
-    speak: none;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
