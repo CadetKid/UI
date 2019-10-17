@@ -128,6 +128,7 @@ body {
   .margin {
     margin: 0 !important;
   }
+
   /*----------------------------------------
       Pre Loader
   ------------------------------------------*/
@@ -163,7 +164,6 @@ body {
     position: absolute;
     left: 48%;
     top: 46%;
-    background: url(../images/user-bg-2.jpg) no-repeat center center;  
     z-index: 1001;
   }
   #loader:before {
@@ -191,7 +191,7 @@ body {
     bottom: 15px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #f9c922;
+    border-top-color: #212121;
     -webkit-animation: spin 1.5s linear infinite;
     /* Chrome, Opera 15+, Safari 5+ */
     
@@ -247,7 +247,7 @@ body {
     top: 0;
     width: 51%;
     height: 100%;
-    background: #222222;
+    background: #e0e0e0;
     z-index: 1000;
     -webkit-transform: translateX(0);
     /* Chrome, Opera 15+, Safari 3.1+ */
@@ -353,132 +353,6 @@ body {
     }
   }
   
-  
-  /*Search box*/ 
-  .header-search-wrapper {
-    max-width: 824px;
-    width: 100%;
-    margin: 0 auto;
-    width: calc(100% - 45%);
-    height: 40px;
-    display: inline-block;
-    margin-left: 240px;
-    position: relative;
-  }
-  #content .header-search-wrapper {
-    width: 100%;
-    margin: 0 auto; 
-    height: 40px;
-    display: inline-block; 
-    position: relative; 
-  }
-  .header-search-wrapper i {
-    position: absolute;
-    top: 0;
-    font-size: 24px;
-    top: 6px;
-    left: 24px;
-    line-height:32px !important;
-    -webkit-transition: color 200ms ease;
-    transition: color 200ms ease;
-  }
-  input.header-search-input {
-    display: block;
-    padding: 8px 8px 8px 72px;
-    width: 100%;
-    background: rgba(255,255,255,0.3);
-    height: 24px;
-    -webkit-transition: all 200ms ease;
-    transition: all 200ms ease;
-    border: none;
-    font-size: 16px;
-    appearance: textfield;
-    font-weight: 400;
-    outline: none;
-    border-radius: 3px;
-  }
-  .header-search-input::-webkit-input-placeholder
-  {
-    color:#fff;
-    font-size:16px;
-    font-weight:400
-  }
-  .header-search-input::-moz-placeholder
-  {
-    color:#fff;
-    font-size:16px;
-    font-weight:400
-  }
-  .header-search-input:-ms-input-placeholder
-  {
-    color:#fff;
-    font-size:16px;
-    font-weight:400
-  }
-  .header-search-input::placeholder
-  {
-    color:#fff;
-    font-size:16px;
-    font-weight:400
-  }
-  
-  input.header-search-input:hover {
-      background: rgba(255,255,255,0.5);
-  }
-  
-  input.header-search-input:focus {
-      color:#333;
-      background: #fff;
-  }
-  input.header-search-input:focus {
-    border-bottom: none !important;
-    box-shadow: none !important;
-  }
-  
-  .header-search-wrapper-focus  i {
-    color:#444 ;
-  }
-  .header-search-input:focus::-webkit-input-placeholder
-  {
-    color:#333;
-    font-size:16px;
-    font-weight:400
-  }
-  .header-search-input:focus::-moz-placeholder
-  {
-    color:#333;
-    font-size:16px;
-    font-weight:400
-  }
-  .header-search-input:focus:-ms-input-placeholder
-  {
-    color:#333;
-    font-size:16px;
-    font-weight:400
-  }
-  .header-search-input:focus::placeholder
-  {
-    color:#333;
-    font-size:16px;
-    font-weight:400
-  }
-  
-  
-  /*Old Search*/
-  li.search-out:hover{
-    background: transparent;
-  }
-  .search-out{
-    display: none;
-  }
-  .search-out-text{
-    border-bottom: 1px solid #fff !important;
-  }
-  .search-out input[type=text]:focus:not([readonly]){
-   border-bottom: 1px solid #fff !important; 
-   box-shadow:none;
-  }
-  
   /*=================================================================================
       Sidebar
   ====================================================================================*/
@@ -581,8 +455,7 @@ body {
   ul.side-nav.leftside-navigation:hover {
     /*overflow-y:hidden;*/
   }
-  ul.side-nav.leftside-navigation li.user-details {
-    background: url(../images/user-bg.jpg) no-repeat center center;
+  ul.side-nav.leftside-navigation li.user-details {    
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -601,9 +474,7 @@ body {
     font-size: 13px;
     color: #fff;
   }
-  ul.side-nav.leftside-navigation .profile-image {
-    /*height: 50px;*/
-  }
+
   ul.side-nav.leftside-navigation .profile-btn {
     margin: 0;
     text-transform: capitalize;
@@ -631,62 +502,6 @@ body {
     font-size: 48px;
   }
   
-  
-  /*----------------------------------------
-      Right Chat Slideout
-  ------------------------------------------*/
-  
-  .rightside-navigation {
-    overflow: hidden;
-  }
-  .chat-close-collapse {
-    padding: 5px 15px 0 0;
-  }
-  #right-search .input-field {
-    margin-top: 0px;
-  }
-  #chat-out .collapsible-header {
-    background-color: transparent;
-    border: none;
-    line-height: 45px;
-    height: 45px;
-    font-weight: 400;  
-  }
-  #chat-out .chat-out-list {
-    padding: 5px;
-    margin: 0;
-    border-bottom: 1px solid #e0e0e0;
-  }
-  #chat-out .favorite-associate-list .circle {
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    border-radius: 50px;
-    border: 2px solid #999;
-    padding: 3px;
-    display: block;
-  }
-  #chat-out .favorite-associate-list .online-user {
-    border: 2px solid #00e676;
-  }
-  #chat-out .recent-activity-list-icon {
-    margin-top: 8px;
-    font-size: 2rem;
-  }
-  #chat-out .recent-activity-list-text a {
-    font-size: 0.8rem;
-    padding: 0;
-    font-weight: 600;
-  }
-  #chat-out .recent-activity-list-text p {
-    font-size: 0.9rem;
-    padding: 0;
-  }
-  #chat-out .favorite-associate-list p {
-    padding: 0;
-  }
-  #chat-out .favorite-associate-list p.place {
-    font-size: 0.8rem;
-  }
   /* =================================================================================
       Content
   ================================================================================= */
@@ -773,56 +588,6 @@ body {
     margin: 0;
     font-weight: 400;
   }
-  /*flight-card*/
-  
-  #flight-card .card-header .card-title {
-    padding: 20px;
-  }
-  #flight-card .flight-card-title {
-    margin: 0;
-    font-weight: 300;
-  }
-  #flight-card .flight-card-date {
-    font-size: 1.0rem;
-    margin: 0;
-  }
-  #flight-card .flight-state {
-    padding-bottom: 15px;
-  }
-  #flight-card .flight-state-two {
-    border-left: 1px dashed #9e9e9e;
-  }
-  #flight-card .flight-icon {
-    font-size: 2.2rem;
-    display: block;
-    -webkit-transform: rotate(90deg);
-    /* Safari */
-    
-    -moz-transform: rotate(90deg);
-    /* Firefox */
-    
-    -ms-transform: rotate(90deg);
-    /* IE */
-    
-    -o-transform: rotate(90deg);
-    /* Opera */
-    
-    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=3); 
-    /* SASS Internet Explorer */
-  }
-  #flight-card .card-content-bg {
-    background: url(../images/sample-1.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-  #flight-card .card-content {
-    background: rgba(0, 0, 0, 0.25);
-  }
-  #flight-card .flight-state-wrapper {
-    margin: 0 0 100px 0 !important;
-  }
   /*task-card*/
   
   #task-card label {
@@ -894,138 +659,6 @@ body {
     right: -18px;
     margin-right: 10px !important;
   }
-  /*----------------------------------------
-      Charts
-  ------------------------------------------*/
-  
-  #chart-dashboard {
-    padding-top: 12px;
-  }
-  #chart-dashboard .card .card-content,
-  #card-stats .card .card-content,
-  #card-stats .card .card-action {
-    padding: 10px 14px;  
-  }
-  #line-updated {
-    /*background: #00bcd4;*/
-  }
-  .sample-chart-wrapper {
-    width: 100%;
-  }
-  .chart-title {
-    font-size: 1.6rem;
-    font-weight: 300;
-  }
-  /* Revenue Chart */
-  
-  .chart-revenue {
-    float: right;
-    text-align: center;
-    padding: 8px;
-    border-radius: 3px;
-  }
-  .chart-revenue .chart-revenue-total {
-    font-size: 0.9rem;
-    margin: 0;
-  }
-  .chart-revenue .chart-revenue-per {
-    font-size: 0.8rem;
-    margin: 0;
-  }
-  .chart-revenue .chart-revenue-per i{
-    position: relative;
-    top: 5px;
-  }
-  .chart-revenue-switch {
-    padding-top: 28px;
-    padding-right: 10px;
-    color: #fff;
-    text-align: right;
-  }
-  
-  /* doughnut chart */
-  .doughnut-chart-status {
-    position: relative;
-    top: -75px;
-    left: 0;
-    font-size: 16px;
-    font-weight: 500;
-    height: 0px;
-    text-align: center;
-  }
-  .doughnut-chart-status p {
-    margin-top: -5px;
-  }
-  .doughnut-chart-legend li{
-    padding: 2px 0;
-    font-size: 0.9rem;
-  }
-  .doughnut-chart-legend li:before {
-    content: "";
-    width: 8px;
-    height: 8px;
-    display: block;
-    float: left;
-    margin-top: 6px;
-    margin-right: 4px;
-  }
-  li.mobile:before {
-    background: #F7464A;
-  }
-  li.kitchen:before {
-    background: #46BFBD;
-  }
-  li.home:before {
-    background: #FDB45C;
-  }
-  a.button-collapse.top-nav {
-    position: absolute;
-    left: 7.5%;
-    top: 0;
-    float: none;
-    margin-left: 1.5rem;
-    color: #fff;
-    font-size: 32px;
-    z-index: 2;
-  }
-  /* trending bar chart */
-  
-  .trending-bar-chart-wrapper {
-    width: 100%;
-  }
-  .btn-move-up {
-    position: relative;
-    top: -28px;
-    right: -18px;
-    margin-right: 10px !important;
-  }
-  /* Flot Chart*/
-  
-  .flotchart-placeholder {
-    width: 100%;
-    height: 300px;
-    font-size: 13px;
-    line-height: 1.2em;
-  }
-  #flotchart table {
-    position: absolute;
-    top: 13px;
-    right: 17px;
-    font-size: smaller;
-    color: #545454;
-    width: 100px;
-  }
-  #flotchart td,
-  th {
-    padding: 5px;
-  }
-  /* xCharts */
-  
-  .xchart-placeholder {
-    width: 90%;
-    height: 300px;
-  }
-  /*Sparkline*/
   
   .tooltip-class {
     overflow: hidden;
@@ -1034,16 +667,6 @@ body {
     width: 30px;
   }
   
-  /**/
-  #ct2-chart .ct-series.ct-series-a .ct-area{
-    fill: #00BCD4;
-  }
-  #ct2-chart .ct-series.ct-series-a .ct-point{
-    stroke:#00BCD4;
-  }
-  #ct2-chart .ct-series.ct-series-a .ct-line{
-    stroke: #54E2F4;
-  }
   /*------------------
     Widget
   --------------------*/
@@ -1339,206 +962,7 @@ body {
     text-align: center;
     padding: 20px 0 !important;
   }
-  /*----------------------------------------
-      Email Page
-  ------------------------------------------*/
   
-  #mail-app hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #e0e0e0;
-    margin: 1em 0;
-    padding: 0;
-  }
-  .email-unread .email-title {
-    font-weight: 500;
-  }
-  #email-sidebar {
-    min-height: 650px;
-  }
-  #email-sidebar li {
-    padding: 10px 0;
-    text-align: center;
-  }
-  #email-sidebar li i {
-    padding: 12px;
-    color: #272727;
-  }
-  #email-sidebar li i.active {
-    background: #DDDDDD;
-    border-radius: 2px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-  }
-  #email-sidebar li i:hover {
-    background: #DDDDDD;
-    border-radius: 2px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-  }
-  #mail-app #email-sidebar,
-  #mail-app #email-list,
-  #mail-app #email-details {
-    margin-top: 0px;
-  }
-  #email-list {
-    padding: 0;
-  }
-  #email-list .collection {
-    margin: 0;
-  }
-  #email-list .collection .collection-item.avatar {
-    height: auto;
-    padding-left: 72px;
-    position: relative;
-  }
-  #email-list .collection .collection-item:hover {
-    background: #e1f5fe;
-    cursor: pointer;
-  }
-  #email-list .collection .collection-item.selected {
-    background: #e1f5fe;
-    border-left: 4px solid #29b6f6;
-  }
-  #email-list .collection .collection-item.avatar .secondary-content {
-    position: absolute;
-    top: 10px;
-    right: -4px;
-  }
-  #email-list .collection .collection-item.avatar .secondary-content.email-time {
-    right: 8px;
-  }
-  #email-list .collection .collection-item.avatar .icon {
-    position: absolute;
-    width: 42px;
-    height: 42px;
-    overflow: hidden;
-    left: 15px;
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    top: 20px;
-  }
-  #email-list .collection .collection-item.avatar .circle {
-    position: absolute;
-    width: 42px;
-    height: 42px;
-    overflow: hidden;
-    left: 15px;
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
-    font-size: 1.5rem;
-    color: #fff;
-    font-weight: 300;
-    padding: 10px;
-  }
-  #email-list .collection .collection-item.avatar img.circle {
-    padding: 0px;
-  }
-  #email-list .attach-file {
-    -ms-transform: rotate(90deg);
-    /* IE 9 */
-    
-    -webkit-transform: rotate(90deg);
-    /* Chrome, Safari, Opera */
-    
-    transform: rotate(90deg);
-    color: #9e9e9e;
-    font-size: 1.1rem;
-  }
-  #email-details {
-    padding: 15px;
-  }
-  #email-details .email-subject {
-    font-size: 1.2rem;
-  }
-  #email-details .email-subject i {
-    font-size: 2.2rem;
-  }
-  #email-details .email-tag {
-    padding: 3px;
-    font-size: 0.9rem;
-  }
-  #email-details .collection {
-    border: none;
-  }
-  #email-details .collection .collection-item.avatar {
-    height: auto;
-    padding-left: 72px;
-    position: relative;
-  }
-  #email-details .collection .collection-item.selected {
-    background: #e1f5fe;
-    border-left: 4px solid #29b6f6;
-  }
-  #email-details .collection .collection-item.avatar .icon {
-    position: absolute;
-    width: 42px;
-    height: 42px;
-    overflow: hidden;
-    left: 15px;
-    display: inline-block;
-    vertical-align: middle;
-    top: 20px;
-  }
-  #email-details .collection .collection-item.avatar .circle {
-    position: absolute;
-    width: 42px;
-    height: 42px;
-    overflow: hidden;
-    left: 15px;
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
-    font-size: 1.5rem;
-    color: #fff;
-    font-weight: 300;
-    padding: 10px;
-  }
-  #email-details .collection .collection-item.avatar img.circle {
-    padding: 0px;
-  }
-  #email-details .email-actions {
-    padding-top: 25px;
-  }
-  #email-details .email-actions a {
-    color: #757575;
-    padding: 5px;
-  }
-  .email-reply {
-    padding-top: 20px;
-  }
-  .email-reply a {
-    color: #757575;
-  }
-  .email-reply p {
-    color: #757575;
-    margin: 0;
-  }
-  .email-reply a i {
-    font-size: 2rem;
-  }
-  #mail-app .modal .modal-content {
-    padding: 0;
-  }
-  .model-email-content {
-    padding: 24px;
-  }
-  /*----------------------------------------
-      Invoice Page
-  ------------------------------------------*/
-  
-  .invoice-icon i {
-    font-size: 2rem;
-  }
-  .invoice-table {
-    padding-top: 40px;
-  }
-  .invoice-text{
-    padding: 18px 0px;
-  }
   
   /*----------------------------------------
       Blog
