@@ -11,6 +11,11 @@ $(document).ready(function() {
   $('.sidenav').sidenav();
   $('select').formSelect();
 
+
+// datatable
+
+
+
     "use strict";
   
     var window_width = $(window).width();
