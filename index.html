@@ -5,9 +5,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ProjectCPA</title>
-    <link rel="icon" href="assets/img/cpalogo.png">
+    <link rel="icon" href="assets/img/cadetkid.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=El+Messiri&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/materializecss.css">
@@ -23,14 +23,26 @@
     <header>
         <nav class="nav-extended nav-fixed indigo z-depth-2">
             <div class="nav-wrapper">
-                <a class="brand-logo" id="cpa-logo"><i class="material-icons">device_hub</i>ProjectCPA</a>
+                <a class="brand-logo" id="cpa-logo"><i class="material-icons" id="logo-icon">device_hub</i>CadetKid</a>
                 <a class="brand-logo center" id="brand-logo">Course Pre-Advising</a>
                 <a href="#" class="sidenav-trigger" data-target="mobile-nav">
                     <i class="material-icons">menu</i>
                 </a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="signup.html" class="waves-teal btn-flat yellow-text">SignUp</a>
-                        <a href="signin.html" class="waves-teal btn-flat white-text">SignIn</a></li>
+                    <li><a href="signup.html" class="btn-flat yellow-text">SignUp</a>
+                        <a href="signin.html" class="btn-flat white-text">SignIn</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-trigger waves-effect waves-light btn-flat white-text" href='#'
+                            data-target='dropdown1'><i class="material-icons left">arrow_drop_down</i>Pages</a>
+                        <ul id='dropdown1' class='dropdown-content'>
+                            <li><a href="enrolled_student.html">Enrolled students</a></li>
+                            <li><a href="retake_student.html">Retake students</a></li>
+                            <li><a href="batch22.html">Section</a></li>
+                            <li><a href="active-enrollment.html">Active enrollment</a></li>
+                        </ul>
+
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -40,27 +52,29 @@
         </ul>
     </header>
 
-    <div class="row"><br>
-        <div class="col s5 l5">
-            <div class="left-align">
-                <img id="presentation-svg" width="500" class="responsive-img"
-                    src="assets/img/undraw_web_developer_p3e5.svg" />
+    <div class="container">
+        <div class="row"><br>
+            <div class="col s5 l5">
+                <div class="left-align">
+                    <img id="presentation-svg" width="500" class="responsive-img"
+                        src="assets/img/undraw_web_developer_p3e5.svg" />
+                </div>
             </div>
-        </div>
-        <div class="col s6 l6">
-            <div class="center-align">
-                <div class="smallPresentationImage"></div>
-                <h4 id="presentation-page-header">What is Course Pre-Advising?</h4>
-            </div><br>
-            <p id="presentation-page-text">It is a long established fact that a reader will be distracted by the
-                readable
-                content of a page when looking at its layout. The point of using Lorem Ipsum
-                is that it has a more-or-less normal distribution of letters, as opposed to
-                using 'Content here, content here', making it look like readable English.
-                Many desktop publishing packages and web page editors now use Lorem Ipsum as
-                their default model text, and a search for 'lorem ipsum' will uncover many web
-                sites still in their infancy. Various versions have evolved over the years,
-                sometimes by accident, sometimes on purpose (injected humour and the like</p>
+            <div class="col s6 l6">
+                <div class="center-align">
+                    <div class="smallPresentationImage"></div>
+                    <h4 id="presentation-page-header">What is Course Pre-Advising?</h4>
+                </div><br>
+                <p id="presentation-page-text">It is a long established fact that a reader will be distracted by the
+                    readable
+                    content of a page when looking at its layout. The point of using Lorem Ipsum
+                    is that it has a more-or-less normal distribution of letters, as opposed to
+                    using 'Content here, content here', making it look like readable English.
+                    Many desktop publishing packages and web page editors now use Lorem Ipsum as
+                    their default model text, and a search for 'lorem ipsum' will uncover many web
+                    sites still in their infancy. Various versions have evolved over the years,
+                    sometimes by accident, sometimes on purpose (injected humour and the like</p>
+            </div>
         </div>
     </div>
 
