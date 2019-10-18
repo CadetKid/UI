@@ -5,12 +5,15 @@
   margin-left: 15px;
   color: #ffffff;
 }
+
 #presentation-page-text{
   line-height: 45px;
 }
+
 #presentation-svg{
   margin-top: 40px;
 }
+
 #brand-logo{
   font-family: 'Poiret One', cursive;
 }
@@ -50,6 +53,14 @@
 div.bread{
   margin-top: 10px;
   margin-left: 20px;
+}
+
+#label-size{
+  font-size: 20px;
+}
+
+#number{
+  display: none;
 }
 
 body {

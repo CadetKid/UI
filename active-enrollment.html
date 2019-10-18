@@ -25,7 +25,8 @@
     <header>
         <nav class="nav-extended nav-fixed indigo">
             <div class="nav-wrapper">
-                <a class="brand-logo" id="cpa-logo">ProjectCPA</a>
+                <a href="index.html" class="brand-logo" id="cpa-logo"><i
+                        class="material-icons">device_hub</i>ProjectCPA</a>
                 <a href="#" class="sidenav-trigger" data-target="mobile-nav">
                     <i class="material-icons">menu</i>
                 </a>
@@ -33,7 +34,8 @@
                     <li><a href="enrolled_student.html">Enrolled Student</a></li>
                     <li><a href="retake_student.html">Retake Students</a></li>
                     <li class="active"><a href="active-enrollment.html">Active Enrollment</a></li>
-                    <li><a href="index.html" class="tooltipped" data-tooltip="Logout"><i class="material-icons">exit_to_app</i></a></li>
+                    <li><a href="index.html" class="tooltipped" data-tooltip="Logout"><i
+                                class="material-icons">exit_to_app</i></a></li>
                 </ul>
             </div>
         </nav>
@@ -45,15 +47,54 @@
         </ul>
     </header>
 
-    <div class="row">
-        
+    <div class="container">
+        <div class="row">
+            <div class="card col s12 l8 offset-l2 offset-m1 card-border z-depth-2">
+                <div class="card-content">
+                    <div class="col s12 l12">
+                        <h5>Active/ Inactive enrollment form for students to do the course registration.</h5>
+                        <div class="switch center-align">
+                            <label id="label-size">
+                                Inactive
+                                <input type="checkbox">
+                                <span class="lever"></span>
+                                Active
+                            </label>
+                        </div><br>
+                        <hr><br>
+                        <h5>How do you want to create section?</h5>
+                        <form action="#">
+                            <p>
+                                <label>
+                                    <input name="group1" type="radio" value="one" id="one" checked />
+                                    <span>Create one by one</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input name="group1" type="radio" value="all" id="all"/>
+                                    <span>All at once</span>
+                                </label>
+                            </p><br>
+                            <div class="row" id="number">
+                                <div class="input-field col s6 l6">
+                                    <input id="section-number" type="number" class="validate">
+                                    <label for="section-number">Number of Section</label>
+                                    <a href="#" class="waves-effect waves-light btn indigo darken-2">Create</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/materialize.js"></script>
     <script src="assets/js/plugin.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>
-
