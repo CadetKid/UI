@@ -6,6 +6,11 @@
   color: #ffffff;
 }
 
+#logo-icon{
+  margin-top: -3px;
+  margin-right: 2px;
+}
+
 #presentation-page-text{
   line-height: 45px;
 }
