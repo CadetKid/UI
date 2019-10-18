@@ -22,6 +22,9 @@
 #info-svg{
   margin-top: 80px;
 }
+#info-svg-signin{
+  margin-top: 15px;
+}
 
 .card-border{
   border-radius: 15px;
@@ -1176,6 +1179,9 @@ body {
   #info-svg{
     display: none;
   }
+  #info-svg-signin{
+    display: none;
+  }
 div.smallPresentationImage{
     content:url(../img/undraw_web_developer_p3e5.svg);
     /*Centering Image*/
@@ -1195,10 +1201,6 @@ div.smallPresentationImage{
     }
     .info-link{
       display: none;
-    }
-    #info-input-field{
-
-
     }
   } 
   
