@@ -74,11 +74,7 @@ $(document).ready(function() {
     // Materialize Tabs
     $('.tab-demo').show().tabs();
     $('.tab-demo-active').show().tabs();
-  
-    // Materialize Parallax
-    $('.parallax').parallax();
-    $('.modal-trigger').leanModal();
-  
+
     // Materialize scrollSpy
     $('.scrollspy').scrollSpy();
   
@@ -88,19 +84,8 @@ $(document).ready(function() {
     });
   
     // Materialize sideNav  
-  
-    //Main Left Sidebar Menu
-    $('.sidebar-collapse').sideNav({
-      edge: 'left', // Choose the horizontal origin    
-    });
-  
-    // FULL SCREEN MENU (Layout 02)
-    $('.menu-sidebar-collapse').sideNav({
-          menuWidth: 240,
-          edge: 'left', // Choose the horizontal origin     
-          //defaultOpen:true // Set if default menu open is true
-        });
-  
+
+
     // HORIZONTAL MENU (Layout 03)
     $('.dropdown-menu').dropdown({
         inDuration: 300,
