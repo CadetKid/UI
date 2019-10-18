@@ -1173,6 +1173,9 @@ body {
   #presentation-svg{
     display: none;}
 
+  #info-svg{
+    display: none;
+  }
 div.smallPresentationImage{
     content:url(../img/undraw_web_developer_p3e5.svg);
     /*Centering Image*/
@@ -1188,6 +1191,13 @@ div.smallPresentationImage{
     #presentation-page-header{
       font-size: 30px;
       margin-left: -50%;
+
+    }
+    .info-link{
+      display: none;
+    }
+    #info-input-field{
+
 
     }
   } 
