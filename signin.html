@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProjectCPA</title>
+    <link rel="icon" href="assets/img/cpalogo.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/materializecss.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <header>
+        <nav class="nav-extended nav-fixed indigo z-depth-2">
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo" id="cpa-logo"><i
+                        class="material-icons">device_hub</i>ProjectCPA</a>
+                <a class="brand-logo center" id="brand-logo">Sign In</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+                    <i class="material-icons">menu</i>
+                </a>
+            </div>
+        </nav>
+        <ul class="sidenav" id="mobile-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="signup.html">SignUp</a></li>
+            <li><a href="signin.html">SignIn</a></li>
+        </ul>
+    </header>
+
+    <form action="">
+        <div class="container">
+            <div class="row"><br>
+                <div class="card col s12 l10 offset-l1 offset-m1 z-depth-2 card-border">
+                    <div class="card-content">
+                        <div class="col s6 l5">
+                            <img id="info-svg-signin" width="300" class="responsive-img"
+                                src="assets/img/undraw_mobile_login_ikmv.svg" />
+                        </div>
+                        <div class="col s6 l5" id="info-input-field">
+                            <div class="row">
+                                <div class="input-field col s12 l12">
+                                    <input placeholder="161-35-0000" id="last_name" type="text" class="validate">
+                                    <label for="last_name">ID</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12 l12">
+                                    <input placeholder="At least 6 digit" id="password" type="password"
+                                        class="validate">
+                                    <label for="password">Password</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="center-align">
+                                    <a href="index.html"
+                                        class="waves-effect waves-light btn indigo darken-2">Login</a><br><br>
+                                    <span class="info-link">New here?&nbsp; <a href="signup.html">SignUp</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </form>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/materialize.js"></script>
+    <script src="assets/js/plugin.js"></script>
+</body>
+
+</html>
