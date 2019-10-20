@@ -36,7 +36,7 @@
 }
 
 .card-border{
-  border-radius: 15px;
+  border-radius: 20px 0px 20px 0px;
 }
 
 .tabs .tab a {
@@ -1236,9 +1236,6 @@ div.smallPresentationImage{
       font-size: 30px;
       margin-left: -50%;
 
-    }
-    .info-link{
-      display: none;
     }
   } 
   
