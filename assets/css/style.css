@@ -27,8 +27,8 @@
   margin-left: 100px;
 }
 
-#info-svg{
-  margin-top: 80px;
+#info-svg-signup{
+  margin-top: 100px;
 }
 #info-svg-signin{
   margin-top: 10px;
@@ -36,7 +36,7 @@
 }
 
 .card-border{
-  border-radius: 15px;
+  border-radius: 20px 0px 20px 0px;
 }
 
 .tabs .tab a {
@@ -1214,14 +1214,14 @@ body {
   #presentation-svg{
     display: none;}
 
-  #info-svg{
+  #info-svg-signup{
     display: none;
   }
   #info-svg-signin{
     display: none;
   }
 div.smallPresentationImage{
-    content:url(../img/undraw_web_developer_p3e5.svg);
+    content:url(../img/coding.gif);
     /*Centering Image*/
     height: 140px;
     width: 140px;
@@ -1236,9 +1236,6 @@ div.smallPresentationImage{
       font-size: 30px;
       margin-left: -50%;
 
-    }
-    .info-link{
-      display: none;
     }
   } 
   
