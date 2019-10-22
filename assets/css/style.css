@@ -68,6 +68,23 @@ div.bread{
   display: none;
 }
 
+#dropdown1{
+  width: 180px !important;
+}
+
+.cimage{
+  height: 180px;
+}
+
+.clink a{
+  font-weight: 400;
+}
+
+.clink a:hover{
+  font-weight: 400;
+  border-bottom: 2px solid;
+}
+
 body {
     background-color: #fcfcfc;
   }
