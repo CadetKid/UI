@@ -24,6 +24,10 @@
   font-family: 'Poiret One', cursive;
 }
 
+#brand-logo-accesspage{
+  display: none;
+}
+
 #info-input-field{
   margin-left: 100px;
 }
@@ -92,6 +96,7 @@ th{
 body {
     background-color: #ffffff;
   }
+
   #main,
   footer {
     padding-left: 240px;
@@ -102,9 +107,11 @@ body {
     top: -14px;
     font-size: 0.8rem;
   }
+
   #sidenav-overlay {
     background-color: transparent;
   }
+  
   .container {
     padding: 0 0.5rem;
     margin: 0 auto;
@@ -1227,20 +1234,31 @@ body {
   #cpa-logo{
     display: none;
   }
+
   #brand-logo{
     font-family: 'Poiret One', cursive;
     font-size: 15px;
-    font-weight: 900;
+    font-weight: 600;
   }
+
+  #brand-logo-accesspage{
+    display: contents;
+    font-family: 'Poiret One', cursive;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
   #presentation-svg{
     display: none;}
 
   #info-svg-signup{
     display: none;
   }
+
   #info-svg-signin{
     display: none;
   }
+
 div.smallPresentationImage{
     content:url(../img/coding.gif);
     /*Centering Image*/
