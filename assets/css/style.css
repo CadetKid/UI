@@ -92,13 +92,24 @@ div.bread{
 
 #square-signup{
   border: 1px solid #ffee58;
+  color: #ffee58;
+  border-radius: 10px;
 }
 
 #square-signup:hover{
-  background-color: yellow;
-  color: black;
+  background: #ffee58;
+  color: #000000;
 }
 
+#square-signin{
+  color: #ffffff;
+}
+
+#square-signin:hover{
+  background: #ffffff;
+  color: #000000;
+  border-radius: 10px;
+}
 th{
   color: #004d40;
 }
