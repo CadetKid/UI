@@ -90,6 +90,15 @@ div.bread{
   border-bottom: 2px solid;
 }
 
+#square-signup{
+  border: 1px solid #ffee58;
+}
+
+#square-signup:hover{
+  background-color: yellow;
+  color: black;
+}
+
 th{
   color: #004d40;
 }
