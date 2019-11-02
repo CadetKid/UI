@@ -20,10 +20,6 @@
   margin-top: 40px;
 }
 
-#brand-logo{
-  font-family: 'Poiret One', cursive;
-}
-
 #brand-logo-accesspage{
   display: none;
 }
@@ -1260,19 +1256,6 @@ body {
   /* STYLES GO HERE */
   #cpa-logo{
     display: none;
-  }
-
-  #brand-logo{
-    font-family: 'Poiret One', cursive;
-    font-size: 15px;
-    font-weight: 600;
-  }
-
-  #brand-logo-accesspage{
-    display: contents;
-    font-family: 'Poiret One', cursive;
-    font-size: 15px;
-    font-weight: 600;
   }
 
   #presentation-svg{
