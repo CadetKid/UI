@@ -13,10 +13,7 @@ $(document).ready(function() {
   $('.modal').modal();
   $('.dropdown-trigger').dropdown();
   $('.tabs').tabs();
-
-// datatable
-
-
+  
 
     "use strict";
   
