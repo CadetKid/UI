@@ -65,6 +65,10 @@ div.bread{
   font-size: 20px;
 }
 
+#retakeCourse{
+  display: none;
+}
+
 #number{
   display: none;
 }

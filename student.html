@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CadetKid</title>
+    <link rel="icon" href="assets/img/cadetkid.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=El+Messiri&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/materializecss.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <header>
+        <nav class="nav-extended nav-fixed purple darken-4 z-depth-2">
+            <div class="nav-wrapper">
+                <a class="brand-logo" id="cpa-logo"><i class="material-icons" id="logo-icon">select_all</i>CadetKid</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="signin.html" class="btn-flat" id="square-signin">SignIn</a></li>
+                    <li><a href="signup.html" class="btn-flat" id="square-signup">SignUp</a></li>
+
+                    <li>
+                        <a class="dropdown-trigger waves-effect waves-light btn-flat white-text" href='#'
+                            data-target='dropdown1'><i class="material-icons left">arrow_drop_down</i>Pages</a>
+                        <ul id='dropdown1' class='dropdown-content'>
+                            <li><a href="enrolled_student.html">Enrolled students</a></li>
+                            <li><a href="retake_student.html">Retake students</a></li>
+                            <li><a href="batch22.html">Section</a></li>
+                            <li><a href="active-enrollment.html">Active enrollment</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="sidenav" id="mobile-nav">
+            <li><a href="signup.html">SignUp</a></li>
+            <li><a href="signin.html">SignIn</a></li>
+            <li><a href="enrolled_student.html">Enrolled students</a></li>
+            <li><a href="retake_student.html">Retake students</a></li>
+            <li><a href="batch22.html">Section</a></li>
+            <li><a href="active-enrollment.html">Active enrollment</a></li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <div class="row"><br>
+            <div class="card col s12 l10 offset-l1 offset-m1 z-depth-2 card-border">
+                <div class="card-content">
+                    <form>
+                        <div class="row">
+                            <div class="input-field col s12 l12">
+                                <input id="first_name" type="text" class="validate" value="171-35-1985" readonly>
+                                <label class="active" for="first_name">Student Id</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12 l12">
+                                <input id="last_name" type="text" class="validate" value="Summer 2019" readonly>
+                                <label for="last_name">Current Semester Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <select>
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="1">Semester 1</option>
+                                    <option value="2">Semester 2</option>
+                                    <option value="3">Semester 3</option>
+                                </select>
+                                <label>Select Semester</label>
+                            </div>
+                        </div>
+                        <!--    Forearch loop for the courses    -->
+                        <div class="row">
+                            <div class="input-field col s12 l12">
+                                <input id="first_name" type="text" class="validate" value="SWE413" readonly>
+                                <label class="active" for="first_name">Course Code</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                                <label>
+                                    <input type="checkbox" id="retakeCheck"/>
+                                    <span>I have retake or another course</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row" id="retakeCourse">
+                            <div class="input-field col s6 l6">
+                                <input id="section-number" type="text" class="validate">
+                                <label for="section-number">Retake Course Code</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <select>
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="1">Section A</option>
+                                    <option value="2">Section B</option>
+                                    <option value="3">Section C</option>
+                                </select>
+                                <label>Select Section</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="center-align">
+                                <button type="submit" class="btn purple darken-4">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/materialize.js"></script>
+    <script src="assets/js/plugin.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
