@@ -58,9 +58,35 @@
                                 Active
                             </label>
                         </div><br>
-                        <hr><br>
-                        <h5>How do you want to create section?</h5>
-                        <form action="#">
+                        <div class="row">
+                            <div class="input-field col s8">
+                                <select id="select" name="select">
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="Spring" id="spring">
+                                        <script>
+                                            var sem1 = "Spring ";
+                                            var today = new Date();
+                                            var year = today.getFullYear();
+                                            document.getElementById("spring").innerHTML = sem1 + year;
+                                        </script>
+                                    </option>
+                                    <option value="Summer" id="summer">
+                                        <script>var sem2 = "Summer ";
+                                            var today = new Date();
+                                            var year = today.getFullYear();
+                                            document.getElementById("summer").innerHTML = sem2 + year;</script>
+                                    </option>
+                                    <option value="Fall" id="fall">
+                                        <script>var sem3 = "Fall ";
+                                            var today = new Date();
+                                            var year = today.getFullYear();
+                                            document.getElementById("fall").innerHTML = sem3 + year;</script>
+                                    </option>
+                                </select>
+                                <label style="font-size: 15px;" class="indigo-text">Select Semester</label>
+                            </div>
+
+                            <!-- <form action="#">
                             <p>
                                 <label>
                                     <input name="group1" type="radio" value="one" id="one" checked />
@@ -84,17 +110,17 @@
                                     <a href="#" class="waves-effect waves-light btn indigo darken-2">Create</a>
                                 </div>
                             </div>
-                        </form>
+                        </form> -->
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/materialize.js"></script>
-    <script src="assets/js/plugin.js"></script>
-    <script src="assets/js/app.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/materialize.js"></script>
+        <script src="assets/js/plugin.js"></script>
+        <script src="assets/js/app.js"></script>
 </body>
 
 </html>
