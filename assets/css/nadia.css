@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+     padding: 0; 
+     box-sizing: border-box ;
+    
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/bgN.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.center h1{
+    font-size: 150px;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 5px;
+    font-weight: 700;
+    text-align: center;
+
+}
+.center h2{
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    text-transform: uppercase;
+    
+
+}
+.center p{
+    font-family: 'Sacramento', cursive;
+    font-size: 20px;
+    color: yellow;
+    text-align: center;
+    margin: 20px auto;
+  
+}
+.button{
+ margin-left: 200px;
+    text-align: center;
+    padding: 15px 32px;
+    display: inline-block;
+  
+}
+.btn{
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+  text-align: center;
+    font-size: 13px;
+    text-transform: uppercase; 
+   
+}
+.btn:hover{
+    background-color:rgb(161, 161, 161);
+    transition: all 0.2s ease-in;
+   }
+
+   .main_body{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/error.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
