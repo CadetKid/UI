@@ -26,6 +26,18 @@ $(document).ready(function() {
       }, 200);
     });  
   
+
+    $(".profile-button, .dropdown-settings, .dropdown-menu").dropdown({
+      inDuration: 300,
+      outDuration: 225,
+      constrainWidth: false,
+      hover: false,
+      gutter: 0,
+      coverTrigger: false,
+      alignment: "right"
+      // stopPropagation: false
+   });
+
     
     // Search class for focus
     $('.header-search-input').focus(
